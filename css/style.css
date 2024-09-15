@@ -1,0 +1,261 @@
+/* Paleta de colores */
+:root {
+  --primary-color: #b14f57; /* Naranja intenso */
+  --secondary-color: #c98989; /* Verde fresco */
+  --background-color: #f9f9f9; /* Fondo claro */
+  --dark-color: #343a40; /* Fondo oscuro */
+  --text-color: #333333; /* Texto principal */
+  --white-color: #ffffff; /* Texto blanco */
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* Header */
+.navbar {
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--white-color);
+  font-size: 1.7rem;
+}
+
+.navbar-nav .nav-link {
+  color: var(--white-color);
+  font-size: 1.2rem;
+  margin-right: 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+/* Ajustar el tamaño del logo */
+.logo {
+  width: 60px; /* Cambia el tamaño según lo necesites */
+  height: 60px;
+}
+
+
+/* Carrusel */
+.carousel-item img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--white-color);
+}
+
+/* Carrusel */
+.carousel-item img {
+  width: 100%;
+  height: 400px; /* Controlar la altura */
+  object-fit: cover; /* Ajustar sin distorsionar la imagen */
+}
+
+.carousel-caption p {
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semitransparente */
+  padding: 10px;
+  border-radius: 5px; /* Borde redondeado para mejorar la estética */
+  color: #ffffff; /* Asegurarse de que el texto sea blanco */
+  display: inline-block; /* Para ajustar el fondo solo al tamaño del texto */
+}
+
+
+
+/* Formulario */
+.form-label {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.form-control, .form-select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--dark-color);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+.btn-success {
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* Card de Promoción */
+.card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.card-header {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.card-body {
+  background-color: var(--background-color);
+}
+
+.card-body h5 {
+  color: var(--primary-color);
+}
+
+.card-body p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+/* Resumen y Ticket */
+#resumenPedido, #ticketPedido {
+  background-color: var(--white-color);
+  border: 1px solid var(--primary-color);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#ticketPedido h3 {
+  color: var(--secondary-color);
+}
+
+#ticketNumero, #ticketMensaje {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Espaciado adicional */
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+/* Estilos de fondo para Reservas y Contacto */
+body {
+  background: url('../images/fondo-reservas-contacto.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--text-color);
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-control, .form-select {
+  background-color: var(--white-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Estilo para el texto en el footer */
+footer {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* Estilos para botones con transición */
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+/* Estilos para la imagen del logo con transición */
+.logo-transition {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-transition:hover {
+  transform: scale(1.1); /* Aumenta el tamaño del logo al pasar el cursor */
+  opacity: 0.9; /* Reduce ligeramente la opacidad al pasar el cursor */
+}
+

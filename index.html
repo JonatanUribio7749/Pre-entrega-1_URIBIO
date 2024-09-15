@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batidos Saludables - Simulador de Pedido</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo-batimix.png" alt="Logo Batidos" class="logo">
+          Batimix
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/reservas.html">Reservas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<!-- Carrusel -->
+<section class="mt-5">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/batido-de-fresas.jpg" class="d-block w-100" alt="Batido de Fresa">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Batido de Fresa</h5>
+          <p>Fresco y saludable.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/Batido-platano.jpg" class="d-block w-100" alt="Batido de Banana">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Batido de Banana</h5>
+          <p>Fuente de energía natural.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/batido-de-mango.jpg" class="d-block w-100" alt="Batido de Mango">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Batido de Mango</h5>
+          <p>Exquisito sabor tropical.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/batido-piña.jpg" class="d-block w-100" alt="Batido de Piña">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Batido de Piña</h5>
+          <p>Fresco y tropical.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/frutas-mixtas.jpg.png" class="d-block w-100" alt="Batido de Frutas Mixtas">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Batido de Frutas Mixtas</h5>
+          <p>Una mezcla refrescante de frutas.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</section>
+
+  <!-- Sección de Pedidos y Promoción -->
+  <section class="mt-5 container">
+    <div class="row">
+      <!-- Formulario de Pedido -->
+      <div class="col-md-6">
+        <h2 class="text-center">Realiza tu Pedido</h2>
+        <form id="pedidoForm">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+          </div>
+          <div class="mb-3">
+            <label for="producto" class="form-label">Selecciona tu batido</label>
+            <select class="form-select" id="producto">
+              <option selected>Selecciona tu batido</option>
+              <option value="Fresa">Batido de Fresa</option>
+              <option value="Banana">Batido de Banana</option>
+              <option value="Mango">Batido de Mango</option>
+              <option value="Piña">Batido de Piña</option>
+              <option value="Frutas Mixtas">Batido de Frutas Mixtas</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="tamano" class="form-label">Selecciona el tamaño</label>
+            <select class="form-select" id="tamano">
+              <option selected>Selecciona el tamaño</option>
+              <option value="pequeño">Pequeño</option>
+              <option value="mediano">Mediano</option>
+              <option value="grande">Grande</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="cantidad" class="form-label">Cantidad</label>
+            <input type="number" class="form-control" id="cantidad" placeholder="Ingresa la cantidad">
+          </div>
+          <button type="submit" class="btn btn-success mb-5">Agregar Batido</button>
+        </form>
+      </div>
+
+      <!-- Card de Promoción -->
+      <div class="col-md-6 d-flex align-items-center">
+        <div class="card mx-auto border-success" style="max-width: 400px;">
+          <div class="card-header bg-success text-white text-center">¡Promoción Especial!</div>
+          <div class="card-body text-center">
+            <h5 class="card-title">Descuento del 10%</h5>
+            <p class="card-text">Si tu pedido supera los $20, recibirás un 10% de descuento automáticamente. ¡No te lo pierdas!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resumen del Pedido -->
+  <section id="resumenPedido" class="mt-5 p-4 bg-light border rounded" style="display: none;">
+    <!-- Aquí se mostrará el resumen del pedido antes de generar el ticket -->
+  </section>
+
+  <!-- Ticket del Pedido -->
+  <section id="ticketPedido" class="mt-5 p-4 text-center bg-light border rounded" style="display: none;">
+    <h3 class="text-success">¡Pedido Realizado con Éxito!</h3>
+    <p id="ticketNumero"></p>
+    <p id="ticketMensaje"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-4 mt-5">
+    <p>&copy; 2024 Batidos Saludables. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
