@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Header -->
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
@@ -38,8 +37,6 @@
       </div>
     </nav>
   </header>
-
-<!-- Carrusel -->
 <section class="mt-5">
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
     <div class="carousel-indicators">
@@ -96,11 +93,8 @@
     </button>
   </div>
 </section>
-
-  <!-- Sección de Pedidos y Promoción -->
   <section class="mt-5 container">
     <div class="row">
-      <!-- Formulario de Pedido -->
       <div class="col-md-6">
         <h2 class="text-center">Realiza tu Pedido</h2>
         <form id="pedidoForm">
@@ -135,8 +129,6 @@
           <button type="submit" class="btn btn-success mb-5">Agregar Batido</button>
         </form>
       </div>
-
-      <!-- Card de Promoción -->
       <div class="col-md-6 d-flex align-items-center">
         <div class="card mx-auto border-success" style="max-width: 400px;">
           <div class="card-header bg-success text-white text-center">¡Promoción Especial!</div>
@@ -148,24 +140,16 @@
       </div>
     </div>
   </section>
-
-  <!-- Resumen del Pedido -->
   <section id="resumenPedido" class="mt-5 p-4 bg-light border rounded" style="display: none;">
-    <!-- Aquí se mostrará el resumen del pedido antes de generar el ticket -->
   </section>
-
-  <!-- Ticket del Pedido -->
   <section id="ticketPedido" class="mt-5 p-4 text-center bg-light border rounded" style="display: none;">
     <h3 class="text-success">¡Pedido Realizado con Éxito!</h3>
     <p id="ticketNumero"></p>
     <p id="ticketMensaje"></p>
   </section>
-
-  <!-- Footer -->
   <footer class="bg-dark text-white text-center p-4 mt-5">
     <p>&copy; 2024 Batidos Saludables. Todos los derechos reservados.</p>
   </footer>
-
   <script src="js/app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>

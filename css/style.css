@@ -1,14 +1,12 @@
-/* Paleta de colores */
 :root {
-  --primary-color: #b14f57; /* Naranja intenso */
-  --secondary-color: #c98989; /* Verde fresco */
-  --background-color: #f9f9f9; /* Fondo claro */
-  --dark-color: #343a40; /* Fondo oscuro */
-  --text-color: #333333; /* Texto principal */
-  --white-color: #ffffff; /* Texto blanco */
+  --primary-color: #b14f57; 
+  --secondary-color: #c98989; 
+  --background-color: #f9f9f9; 
+  --dark-color: #343a40; 
+  --text-color: #333333; 
+  --white-color: #ffffff; 
 }
 
-/* Estilos generales */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--background-color);
@@ -28,7 +26,6 @@ h2 {
   padding: 20px;
 }
 
-/* Header */
 .navbar {
   background-color: var(--primary-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -52,14 +49,11 @@ h2 {
   transform: scale(1.1);
 }
 
-/* Ajustar el tamaño del logo */
 .logo {
-  width: 60px; /* Cambia el tamaño según lo necesites */
+  width: 60px; 
   height: 60px;
 }
 
-
-/* Carrusel */
 .carousel-item img {
   max-height: 400px;
   object-fit: cover;
@@ -73,24 +67,20 @@ h2 {
   color: var(--white-color);
 }
 
-/* Carrusel */
 .carousel-item img {
   width: 100%;
-  height: 400px; /* Controlar la altura */
-  object-fit: cover; /* Ajustar sin distorsionar la imagen */
+  height: 400px; 
+  object-fit: cover; 
 }
 
 .carousel-caption p {
-  background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semitransparente */
+  background-color: rgba(0, 0, 0, 0.6); 
   padding: 10px;
-  border-radius: 5px; /* Borde redondeado para mejorar la estética */
-  color: #ffffff; /* Asegurarse de que el texto sea blanco */
-  display: inline-block; /* Para ajustar el fondo solo al tamaño del texto */
+  border-radius: 5px;
+  color: #ffffff; 
+  display: inline-block; 
 }
 
-
-
-/* Formulario */
 .form-label {
   font-weight: bold;
   color: var(--text-color);
@@ -122,7 +112,6 @@ h2 {
   cursor: pointer;
 }
 
-/* Card de Promoción */
 .card {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border: none;
@@ -147,7 +136,6 @@ h2 {
   color: var(--text-color);
 }
 
-/* Resumen y Ticket */
 #resumenPedido, #ticketPedido {
   background-color: var(--white-color);
   border: 1px solid var(--primary-color);
@@ -166,7 +154,6 @@ h2 {
   font-weight: bold;
 }
 
-/* Footer */
 footer {
   background-color: var(--dark-color);
   color: var(--white-color);
@@ -180,7 +167,6 @@ footer p {
   font-size: 1.1rem;
 }
 
-/* Espaciado adicional */
 .mb-5 {
   margin-bottom: 3rem;
 }
@@ -189,7 +175,6 @@ footer p {
   margin-top: 3rem;
 }
 
-/* Estilos de fondo para Reservas y Contacto */
 body {
   background: url('../images/fondo-reservas-contacto.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -197,10 +182,10 @@ body {
 }
 
 .form-container {
-  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+  background-color: rgba(255, 255, 255, 0.9); 
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
   max-width: 600px;
   margin: 50px auto;
 }
@@ -226,7 +211,6 @@ h2 {
   background-color: var(--secondary-color);
 }
 
-/* Estilo para el texto en el footer */
 footer {
   background-color: var(--dark-color);
   color: var(--white-color);
@@ -235,7 +219,6 @@ footer {
   margin-top: 50px;
 }
 
-/* Estilos para botones con transición */
 .btn-primary {
   background-color: var(--primary-color);
   border: none;
@@ -244,18 +227,16 @@ footer {
 
 .btn-primary:hover {
   background-color: var(--secondary-color);
-  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+  transform: scale(1.05); 
 }
 
-/* Estilos para la imagen del logo con transición */
 .logo-transition {
   width: 150px;
   height: auto;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
 .logo-transition:hover {
-  transform: scale(1.1); /* Aumenta el tamaño del logo al pasar el cursor */
-  opacity: 0.9; /* Reduce ligeramente la opacidad al pasar el cursor */
+  transform: scale(1.1); 
+  opacity: 0.9; 
 }
 
